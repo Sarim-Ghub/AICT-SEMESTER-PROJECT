@@ -375,3 +375,162 @@ story-text h2 {
   text-align: center;
   font-family: 'Arial', sans-serif;
 }
+/* Header & Button */
+.top-label { color: #76c837; font-weight: bold; font-size: 0.8rem; display: block; margin-bottom: 10px; }
+.usp-section h2 { font-family: 'Times New Roman', serif; font-size: 2.5rem; margin-bottom: 20px; }
+.usp-section p { max-width: 700px; margin: 0 auto 15px; color: #666; line-height: 1.5; }
+
+.cta-button {
+  display: inline-block;
+  background-color: #76c837;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+/* Timeline Layout */
+.timeline-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #e0e0e0;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 60px;
+  display: block;
+  align-items: center;
+}
+
+.icon-circle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #76c837;
+  border-radius: 50%;
+  color: white;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+/* Card Styling */
+.content-card {
+  width: 48%;
+  background: white;
+  padding: 30px;
+  border-radius: 20px 50px 50px 20px; /* Matching the unique rounded style */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+/* Alternating Logic */
+.timeline-item.left { justify-content: flex-start; }
+.timeline-item.right { justify-content: flex-end; }
+
+.timeline-item.right .content-card {
+  border-radius: 50px 20px 20px 50px;
+  text-align: left;
+}
+
+.content-card h3 { color: #76c837; margin-top: 0; font-size: 1.3rem; }
+.content-card p { font-size: 0.9rem; color: #555; margin-bottom: 0; }
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .timeline-line { left: 30px; }
+  .icon-circle { left: 30px; transform: none; }
+  .content-card { width: 80%; margin-left: 70px !important; }
+  .timeline-item.left, .timeline-item.right { justify-content: flex-start; }
+}
+/* End of Our UP'S section styles */
+/* Approach section styles */
+.approach-section {
+  background-color: #0d3d2e; /* Deep forest green */
+  color: #ffffff;
+  padding: 100px 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.label {
+  color: #76c837; /* Accent lime green */
+  font-weight: bold;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.section-header h2 {
+  font-family: 'Times New Roman', serif;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+  line-height: 1.5;
+}
+
+/* Grid and Cards */
+.approach-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.approach-card {
+  background-color: #144e3d; /* Slightly lighter green for cards */
+  color: #ffffff;
+  padding: 50px 30px;
+  border-radius: 20px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.approach-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 30px;
+}
