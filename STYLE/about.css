@@ -1,0 +1,199 @@
+[4:30 PM, 1/4/2026] Sarim: <section>
+    <div class="header-content">
+    <span class="top-label">OUR USP'S</span>
+    <h2>What we stand for</h2>
+    <p>In today's world, businesses face increasing scrutiny over sustainability claims. Our projects are fully compliant with evolving regulations, ensuring you stay ahead of legal requirements.</p>
+    <p>At shajar, we help you avoid greenwashing and safeguard your brand's reputation with verifiable, transparent solutions.</p>
+    <a href="#" class="cta-button">Schedule a call &rarr;</a>
+  </div>
+
+  <div class="timeline-container">
+    <div class="timeline-line"></div>
+
+    <div class="timeline-item left">
+      <div class="icon-circle"><i class="fas fa-chart-line"></i></div>
+      <div class="content-card">
+        <h3>Transparency</h3>
+ …
+[4:43 PM, 1/4/2026] Sarim: /* Global variables used on home page */
+:root {
+  --dark-green: #0b2b1d;
+  --light-beige: #e9e8de;
+  --accent-green: #8db53f;
+  --card-bg: #f9f9f5;
+  --white: #ffffff;
+  --serif-font: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --sans-font: 'Inter', sans-serif;
+}
+
+/* General body background */
+body {
+    background-color: #f4f3ee; /* Light off-white background */
+}
+
+/* Navbar (shared but used on home) */
+.navbar {
+    background-color: #f4f3ee;
+    padding: 15px 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #062c1f;
+    letter-spacing: 1px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #062c1f;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.btn-signup {
+    text-decoration: none;
+    background-color: #062c1f;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-signup:hover {
+    background-color: #0a422f;
+}/* About us page styles */
+/* Hero Section Styling */
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+    position: relative;
+    height: 400px; /* Adjust height as needed */
+    background: linear-gradient(rgba(10, 40, 20, 0.8), rgba(10, 40, 20, 0.8)), 
+                url('your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;              /* Yeh important – flex enable karo */
+    align-items: center;        /* Vertically center */
+    justify-content: center;    /* Horizontally center */
+    text-align: center;         /* Text ko center */
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;             /* Extra safety ke liye */
+    text-align: center;         /* Text center */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  /* Matching the serif-style font in your image */
+  font-family: 'Times New Roman', serif;
+   
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+/* End of hero section styles */
+/* Start of Our story section styles */
+/* Container styling */
+.story-container {
+  padding: 80px 20px;
+  background-color: #f4f3ee;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.story-content {
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Image Side */
+.story-image-wrapper {
+  flex: 1;
+  background-color: #0d3d2e; /* Deep forest green */
+  border-radius: 30px;
+  overflow: hidden;
+  display: block;
+  align-items: flex-end; /* Keeps people at the bottom of the frame */
+  min-width: 400px;
+}
+
+.story-image-wrapper img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Text Side */
+.story-text {
+  flex: 1;
+}
+
+.subtitle {
+  color: #76c837; /* Bright lime green color */
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 10px;
+}
