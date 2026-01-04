@@ -197,3 +197,181 @@ body {
   display: block;
   margin-bottom: 10px;
 }
+story-text h2 {
+  font-family: 'Times New Roman', serif;
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  margin: 0 0 25px 0;
+}
+
+.story-text p {
+  font-family: Arial, sans-serif;
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+  .story-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .story-image-wrapper {
+    min-width: 100%;
+  }
+}
+/* End of Our story section styles */
+/* Starting of verified Tree planting section styles */
+.verified-section {
+  background-color: #f4f3ee; /* Off-white background */
+  padding: 100px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Standards / Verified Tree Planting section (matches HTML .standards-section) */
+.standards-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f4f3ee;
+}
+
+.standards-section .container {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.standards-section .logo-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 8px 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+  .standards-section .logo-grid { flex-wrap: wrap; }
+  .standards-section .logo-card { flex: 1 1 100%; max-width: 100%; }
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.verified-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+/* Header Styles */
+.top-label {
+  color: #76c837; /* Accent green */
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.section-header h2 {
+  font-family: 'Times New Roman', serif;
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+}
+
+.description {
+  color: #666;
+  line-height: 1.6;
+  max-width: 850px;
+  margin: 0 auto 60px auto;
+  font-size: 1rem;
+}
+
+/* Logo Grid Styles */
+.logo-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo-card {
+  background: #ebeae6; /* Slightly darker than section background */
+  padding: 30px;
+  border-radius: 12px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 220px;
+  min-width: 180px;
+  max-width: 220px;
+  height: 80px;
+  /* Subtle drop shadow */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.logo-card:hover {
+  transform: translateY(-5px);
+}
+
+.logo-card img {
+  max-width: 100%;
+  max-height: 60px;
+  filter: grayscale(1); /* Matches the muted look in the screenshot */
+  opacity: 0.7;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  .logo-card {
+    min-width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+/* Desktop: keep logos in a single centered row, allow horizontal scroll if too many */
+@media (min-width: 769px) {
+  .verified-section .logo-grid {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px; /* room for scroll */
+  }
+  .verified-section .logo-grid::-webkit-scrollbar { height: 8px; }
+}
+/* End of verified Tree planting section styles */
+/* Starting of Our UP'S section styles */
+.usp-section {
+  background-color: #f4f3ee;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
