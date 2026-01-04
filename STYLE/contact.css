@@ -366,3 +366,90 @@ body {
   width: 100%;
 ;
 }
+.reason-card {
+  background-color: #0d3d2e;
+  max-width: 650px;
+  margin: 0 auto;
+  border-radius: 40px;
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.reason-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+}
+
+/* Accordion/Item Styling */
+.collab-item {
+  background-color: #082a20; /* Darker green for buttons */
+  margin-bottom: 12px;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: left;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 600px;
+  align-self: center;
+}
+
+.item-header {
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+.item-header i {
+  transform: rotate(-45deg); /* Matches the diagonal arrow in image */
+  font-size: 0.8rem;
+}
+
+.item-content {
+  padding: 0 25px 20px;
+  font-size: 0.95rem;
+  opacity: 0.8;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Only shows content if 'active' class is present */
+.collab-item:not(.active) .item-content {
+  display: none;
+}
+
+.footer-note {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-top: 30px;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .collab-container {
+    padding: 0 5px;
+  }
+  .reason-card {
+    padding: 25px 8px;
+    max-width: 100%;
+  }
+  .collab-item {
+    max-width: 100%;
+  }
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
