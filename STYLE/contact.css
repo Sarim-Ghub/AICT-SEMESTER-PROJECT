@@ -169,6 +169,23 @@ body {
 .btn-submit:hover {
   background-color: #144e3d;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Mobile Responsiveness */
 @media (max-width: 900px) {
   .contact-container {
@@ -366,6 +383,21 @@ body {
   width: 100%;
 ;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .reason-card {
   background-color: #0d3d2e;
   max-width: 650px;

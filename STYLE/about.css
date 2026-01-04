@@ -1,21 +1,4 @@
-[4:30 PM, 1/4/2026] Sarim: <section>
-    <div class="header-content">
-    <span class="top-label">OUR USP'S</span>
-    <h2>What we stand for</h2>
-    <p>In today's world, businesses face increasing scrutiny over sustainability claims. Our projects are fully compliant with evolving regulations, ensuring you stay ahead of legal requirements.</p>
-    <p>At shajar, we help you avoid greenwashing and safeguard your brand's reputation with verifiable, transparent solutions.</p>
-    <a href="#" class="cta-button">Schedule a call &rarr;</a>
-  </div>
-
-  <div class="timeline-container">
-    <div class="timeline-line"></div>
-
-    <div class="timeline-item left">
-      <div class="icon-circle"><i class="fas fa-chart-line"></i></div>
-      <div class="content-card">
-        <h3>Transparency</h3>
- …
-[4:43 PM, 1/4/2026] Sarim: /* Global variables used on home page */
+/* Global variables used on home page */
 :root {
   --dark-green: #0b2b1d;
   --light-beige: #e9e8de;
