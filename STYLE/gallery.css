@@ -1,0 +1,121 @@
+body {
+    background-color: #f4f3ee !important; /* Yeh sabse important – !important se override ho jayega */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Full height coverage */
+}.navbar {
+  background-color: #f4f3ee;
+  padding: 15px 0;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav { display: flex; gap: 32px; }
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #062c1f;
+  letter-spacing: 1px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover { color: #062c1f; }
+
+.nav-actions { display: flex; align-items: center; gap: 25px; }
+
+.btn-signup {
+  text-decoration: none;
+  background-color: #062c1f;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.btn-signup:hover 
+{ background-color: #0a422f; }
+/* --- Gallery Grid --- */
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    background-color: #f4f3ee;
+}
+
+.label {
+    color: #76c837; /* Accent lime green */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 30px; /* Matching brand rounded corners */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+/* Grid Variances for "Masonry" Look */
+.gallery-item.tall { grid-row: span 2; }
+.gallery-item.wide { grid-column: span 2; }
+
+/* --- Footer/Contact Styling (used on gallery page) --- */
+.contact-section {
+    background-color: #0d3d2e; /* Deep forest green */
+    padding: 100px 20px;
+    color: white;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: block;
+    gap: 80px;
+    align-items: center;
+}
+
+
