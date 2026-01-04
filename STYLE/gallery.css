@@ -1,0 +1,63 @@
+body {
+    background-color: #f4f3ee !important; /* Yeh sabse important – !important se override ho jayega */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Full height coverage */
+}.navbar {
+  background-color: #f4f3ee;
+  padding: 15px 0;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav { display: flex; gap: 32px; }
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #062c1f;
+  letter-spacing: 1px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover { color: #062c1f; }
+
+.nav-actions { display: flex; align-items: center; gap: 25px; }
+
+.btn-signup {
+  text-decoration: none;
+  background-color: #062c1f;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.btn-signup:hover { background-color: #0a422f; }
+
+
